@@ -12,31 +12,10 @@ const server = net.createServer((c) => {
 server.on('error', (err) => {
   throw err;
 });
-server.listen(8080, () => {
+server.listen(0629, () => {
   console.log('server bound');
 });
 
 
 
 
-// server.on('connection', socket => {
-//     console.log('Client Connected');
-
-//     socket.write('Welcome')
-
-//     socket.on('data', data => {
-//         console.log('data is :-- ',data);
-//         socket.write('data is ')
-//         socket.write(data)
-//     })
-
-//     socket.on('end', () => {
-//         console.log('Client Disconnected..');      
-//     })
-// })
-
-// server.listen({
-//     host:'103.250.137.97',
-//     port: 9090,
-//     exclusive: true
-// })
