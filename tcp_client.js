@@ -1,6 +1,7 @@
-const net = require('net')
+//const net = require('net')
+import {net} from 'net'
 
-const client = net.createConnection({ port: 0629 }, () => {
+const client = net.createConnection({ port: 8080 }, () => {
     // 'connect' listener.
     console.log('connected to server!');
     client.write('world!\r\n');
